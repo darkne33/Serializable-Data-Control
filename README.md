@@ -22,4 +22,4 @@ This tool allows you to create automatically serializable classes, you need to s
 <br>
 <hr>
 <h2> Final TestClass </h2>
-<img width="1004" alt="Снимок экрана 2021-10-27 в 16 16 46" src="https://user-images.githubusercontent.com/52866390/139073866-2b2e2e88-3fbb-4258-a5e7-17f1ca9e02c8.png">
+<img width="980" alt="Снимок экрана 2021-10-27 в 16 34 52" src="https://user-images.githubusercontent.com/52866390/139076439-913d6f00-b5f2-4309-a5c2-7a0e0091da2f.png">
