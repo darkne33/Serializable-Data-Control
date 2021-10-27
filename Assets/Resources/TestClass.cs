@@ -18,7 +18,7 @@ public class TestClass
 
     public void LoadData()
     {
-        string loadJsonData = File.ReadAllText(Application.persistentDataPath + "/" + GetType().Name);
-        JsonUtility.FromJsonOverwrite(loadJsonData, this);
+        _jsonData = File.ReadAllText(Application.persistentDataPath + "/" + GetType().Name);
+        JsonUtility.FromJsonOverwrite(_jsonData, this);
     }
 }

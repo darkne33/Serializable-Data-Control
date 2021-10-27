@@ -43,8 +43,8 @@ namespace ControlData
         
             classDefinition += "    public void LoadData()" + Environment.NewLine;
             classDefinition += "    {" + Environment.NewLine;
-            classDefinition += "        string loadJsonData = File.ReadAllText(Application.persistentDataPath + \"/\" + GetType().Name);" + Environment.NewLine;
-            classDefinition += "        JsonUtility.FromJsonOverwrite(loadJsonData, this);" + Environment.NewLine;
+            classDefinition += "        _jsonData = File.ReadAllText(Application.persistentDataPath + \"/\" + GetType().Name);" + Environment.NewLine;
+            classDefinition += "        JsonUtility.FromJsonOverwrite(_jsonData, this);" + Environment.NewLine;
             classDefinition += "    }" + Environment.NewLine;
             
             classDefinition += "}";
