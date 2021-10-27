@@ -11,8 +11,7 @@ namespace ControlData
         {
             string classDefinition = String.Empty;
             string monobehaviourDefinition = isMonobehaviourClass ? " : MonoBehaviour" : "";
-            string serializeKeyDefinition = isMonobehaviourClass ? "[SerializeField] " : "";
-            
+
             classDefinition += "using System;" + Environment.NewLine;
             classDefinition += "using System.IO;" + Environment.NewLine;
             classDefinition += "using UnityEngine;" + Environment.NewLine;
@@ -22,8 +21,7 @@ namespace ControlData
             classDefinition += "[System.Serializable]" + Environment.NewLine;
             classDefinition += "public class " + className + monobehaviourDefinition + Environment.NewLine;
             classDefinition += "{" + Environment.NewLine;
-
-            classDefinition += "    " + serializeKeyDefinition + "private string _key;" + Environment.NewLine;
+            
             classDefinition += "    private string _jsonData;" + Environment.NewLine;
 
             for (int i = 0; i < countFields; i++)
